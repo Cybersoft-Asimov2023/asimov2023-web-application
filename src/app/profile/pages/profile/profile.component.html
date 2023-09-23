@@ -11,11 +11,11 @@
     <div class="profile-detail">
       <h2>Personal Information</h2>
       <div>
-        Name: {{user.first_name}}<br>
-        Last Name: {{user.last_name}}<br>
-        Age: {{user.age}}<br>
-        Phone: {{user.phone}}<br>
-        Email: {{user.email}}<br>
+        Name: {{user?.first_name}}<br>
+        Last Name: {{user?.last_name}}<br>
+        Age: {{user?.age}}<br>
+        Phone: {{user?.phone}}<br>
+        Email: {{user?.email}}<br>
       </div>
     </div>
   </mat-card-content>
@@ -30,6 +30,6 @@
     </div>
   </div>
   <div class="points-button">
-    <button mat-stroked-button color="warn">{{user.point}}</button>
+    <button mat-stroked-button color="warn">{{user?.point}}</button>
   </div>
 </mat-card>

@@ -37,7 +37,13 @@ module.exports = function (config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['Chrome'],
+    browsers: {
+      Edge: {
+        base: 'Edge',
+        flags: ['--some-flag'],
+        binary: 'C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe', // Ruta completa a Microsoft Edge
+      }
+    },
     singleRun: false,
     restartOnFileChange: true
   });
