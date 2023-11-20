@@ -5,7 +5,7 @@ import { catchError, retry, throwError } from "rxjs";
   providedIn: 'root'
 })
 export class SignInService {
-  basePath: string = 'https://asimov-api.azurewebsites.net/api/v1';
+  basePath: string = 'https://asimov2023-api.azurewebsites.net/api/v1';
   httpOptions = {
     headers: new HttpHeaders({
       'Content-type': 'application/json',

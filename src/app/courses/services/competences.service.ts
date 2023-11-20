@@ -7,7 +7,7 @@ import { catchError, retry, throwError } from "rxjs";
 })
 export class CompetencesService {
 
-  basePath = 'https://asimov-api.azurewebsites.net/api/v1';
+  basePath = 'https://asimov2023-api.azurewebsites.net/api/v1';
 
   httpOptions = {
     headers: new HttpHeaders({
